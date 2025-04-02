@@ -240,7 +240,6 @@ export const Default = () => {
                 />
                 <HeaderDivider />
                 <MenuButton
-                  menuTarget={headerRef.current}
                   kind="ghost"
                   label={selectedCategory || 'Select Category'}>
                   <MenuItemRadioGroup
@@ -254,7 +253,6 @@ export const Default = () => {
                   />
                 </MenuButton>
                 <MenuButton
-                  menuTarget={headerRef.current}
                   kind="ghost"
                   label={selectedItem || 'Select Item'}
                   disabled={!selectedCategory}>
